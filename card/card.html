@@ -1,256 +1,237 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Collection</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<title>My Collection</title>
 
-  <style>
-    body {
-      margin: 0;
-      background: linear-gradient(135deg, #1a1f3c, #0d1124, #3c1e5d);
-      background-size: 400% 400%;
-      animation: gradientBG 12s ease infinite;
-      font-family: Arial, sans-serif;
-      padding: 40px;
-    }
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
+<style>
 
-    .card {
-      border: none;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0px 10px 25px rgba(0,0,0,0.4);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      background: #ffffff10;
-      backdrop-filter: blur(6px);
-      border: 1px solid rgba(255,255,255,0.1);
-    }
+body{
+margin:0;
+padding:40px;
+font-family:Arial;
+background:linear-gradient(135deg,#1a1f3c,#0d1124,#3c1e5d);
+background-size:400% 400%;
+animation:gradientBG 12s ease infinite;
+}
 
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0px 20px 35px rgba(0,0,0,0.55);
-    }
+@keyframes gradientBG{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
 
-    .card-body {
-      color: white;
-    }
+h2{
+color:white;
+text-align:center;
+margin-bottom:40px;
+}
 
-    .btn-view {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 8px 16px;
-      background: linear-gradient(90deg, #7b3aed, #5f2eea);
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.2s;
-    }
+.card{
+border:none;
+border-radius:15px;
+overflow:hidden;
+background:#ffffff10;
+backdrop-filter:blur(6px);
+border:1px solid rgba(255,255,255,0.1);
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+transition:0.3s;
+}
 
-    .btn-view:hover {
-      opacity: 0.8;
-    }
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 35px rgba(0,0,0,0.55);
+}
 
-    /* Responsive text */
-    @media (max-width: 576px) {
-      body {
-        padding: 15px;
-      }
+.card img{
+height:220px;
+object-fit:cover;
+}
 
-      h2 {
-        font-size: 22px;
-        margin-bottom: 20px;
-      }
+.card-body{
+text-align:center;
+color:white;
+}
 
-      .card {
-        margin-bottom: 20px;
-      }
-    }
-  </style>
+.btn-view{
+display:inline-block;
+margin-top:10px;
+padding:8px 18px;
+background:linear-gradient(90deg,#7b3aed,#5f2eea);
+color:white;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+}
+
+.btn-view:hover{
+opacity:0.85;
+}
+
+@media(max-width:576px){
+
+body{
+padding:15px;
+}
+
+.card img{
+height:180px;
+}
+
+}
+
+</style>
 </head>
 
 <body>
 
-  <h2 class="text-center text-white mb-4"></h2>
+<h2>My Collection</h2>
 
-  <!-- TOP 3 CARDS -->
-  <div class="container">
-    <div class="row g-4 justify-content-center">
+<div class="container">
 
-      <!-- Card 1 -->
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="card">
-          <img src="3.png" class="card-img-top" alt="">
-          <div class="card-body">
-            <p>Sonu Nigam</p>
-            <a href="sonu/sonu.html" class="btn-view">View</a>
-          </div>
-        </div>
-      </div>
+<div class="row g-4 justify-content-center">
 
-       <div class="col-12 col-sm-6 col-md-4">
-        <div class="card">
-          <img src="ssk2.png" class="card-img-top" alt="">
-          <div class="card-body">
-            <p> Umang 2025 </p>
-            <a href="sonu/sonu.html" class="btn-view">View</a>
-          </div>
-        </div>
-      </div>
+<!-- Card 1 -->
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="card">
+<img src="3.png" class="card-img-top">
+<div class="card-body">
+<p>Sonu Nigam</p>
+<a href="sonu/sonu.html" class="btn-view">View</a>
+</div>
+</div>
+</div>
 
+<!-- Card 2 -->
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="card">
+<img src="ssk2.png" class="card-img-top">
+<div class="card-body">
+<p>Umang 2025</p>
+<a href="sonu/sonu.html" class="btn-view">View</a>
+</div>
+</div>
+</div>
 
-      <!-- Card 2 -->
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="card">
-          <img src="8.png" class="card-img-top" alt="Image is Loading">
-          <div class="card-body">
-            <p>Shreya Ghoshal</p>
-            <a href="Sneha File/snesha.html" class="btn-view">View</a>
-          </div>
-        </div>
-      </div>
+<!-- Card 3 -->
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="card">
+<img src="8.png" class="card-img-top">
+<div class="card-body">
+<p>Shreya Ghoshal</p>
+<a href="Sneha File/snesha.html" class="btn-view">View</a>
+</div>
+</div>
+</div>
 
-      <!-- Card 3 -->
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="card">
-          <img src="17.png" class="card-img-top" alt="">
-          <div class="card-body">
-            <p>Kunal Ganjawala</p>
-            <a href="kunal pic/kunal.html" class="btn-view">View</a>
-          </div>
-        </div>
-      </div>
+<!-- Card 4 -->
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="card">
+<img src="17.png" class="card-img-top">
+<div class="card-body">
+<p>Kunal Ganjawala</p>
+<a href="kunal pic/kunal.html" class="btn-view">View</a>
+</div>
+</div>
+</div>
 
-    </div>
-  </div>
+<!-- Card 5 -->
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="card">
+<img src="adnan.png" class="card-img-top">
+<div class="card-body">
+<p>Adnan Sami</p>
+<a href="an/snesha.html" class="btn-view">View</a>
+</div>
+</div>
+</div>
 
-  <!-- BOTTOM TITLE -->
-  <h2 class="text-center text-white mt-5 mb-4"></h2>
+<!-- Card 6 -->
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="card">
+<img src="12.png" class="card-img-top">
+<div class="card-body">
+<p>Vishal–Shekhar</p>
+<a href="Vishal Shekhar/vishal.html" class="btn-view">View</a>
+</div>
+</div>
+</div>
 
-  <!-- BOTTOM 3 CARDS -->
-  <div class="container">
-    <div class="row g-4 justify-content-center">
+<!-- Card 7 -->
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="card">
+<img src="shan.jpeg" class="card-img-top">
+<div class="card-body">
+<p>Wings Of Love</p>
+<a href="umang/umang.html" class="btn-view">View</a>
+</div>
+</div>
+</div>
 
-      <!-- Card 4 -->
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="card">
-          <img src="adnan.png" class="card-img-top" alt="">
-          <div class="card-body">
-            <p>Adnan Sami</p>
-            <a href="an/snesha.html" class="btn-view">View</a>
-          </div>
-        </div>
-      </div>
+<!-- Card 8 -->
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="card">
+<img src="Monali.jpg" class="card-img-top">
+<div class="card-body">
+<p>Monali Thakur</p>
+<a href="an/snesha.html" class="btn-view">View</a>
+</div>
+</div>
+</div>
 
-      <!-- Card 5 -->
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="card">
-          <img src="12.png" class="card-img-top" alt="">
-          <div class="card-body">
-            <p>Vishal–Shekhar</p>
-            <a href="Vishal Shekhar/vishal.html" class="btn-view">View</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="card">
-          <img src="shan.jpeg" class="card-img-top" alt="Image is Loading">
-          <div class="card-body">
-            <p>Wings OF Love </p>
-            <a href="umang/umang.html" class="btn-view">View</a>
-          </div>
-        </div>
-      </div>
+<!-- Card 9 -->
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="card">
+<img src="Chetla.jpg" class="card-img-top">
+<div class="card-body">
+<p>Shaan (Chetla Agroni)</p>
+<a href="an/snesha.html" class="btn-view">View</a>
+</div>
+</div>
+</div>
 
-            <!-- Card5-->
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="card">
-          <img src="Monali.jpg" class="card-img-top" alt="">
-          <div class="card-body">
-            <p> Monali Thakur </p>
-            <a href="an/snesha.html" class="btn-view">View</a>
-          </div>
-        </div>
-      </div>
+<!-- Card 10 -->
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="card">
+<img src="ss.jpg" class="card-img-top">
+<div class="card-body">
+<p>Salim-Sulaiman</p>
+<a href="an/snesha.html" class="btn-view">View</a>
+</div>
+</div>
+</div>
 
-             <!-- Card 6-->
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="card">
-          <img src="Chetla.jpg" class="card-img-top" alt="">
-          <div class="card-body">
-            <p> Shaan (Chetla Agroni) </p>
-            <a href="an/snesha.html" class="btn-view">View</a>
-          </div>
-        </div>
-      </div>
+<!-- Card 11 -->
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="card">
+<img src="ms.jpg" class="card-img-top">
+<div class="card-body">
+<p>M-Sonic</p>
+<a href="an/snesha.html" class="btn-view">View</a>
+</div>
+</div>
+</div>
 
+<!-- Card 12 -->
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="card">
+<img src="vi.jpg" class="card-img-top">
+<div class="card-body">
+<p>Shaan (Prayas 2025)</p>
+<a href="an/snesha.html" class="btn-view">View</a>
+</div>
+</div>
+</div>
 
-          <!-- Card 7-->
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="card">
-          <img src="ss.jpg" class="card-img-top" alt="">
-          <div class="card-body">
-            <p> Salim-Sulaiman </p>
-            <a href="an/snesha.html" class="btn-view">View</a>
-          </div>
-        </div>
-      </div>
+</div>
+</div>
 
-          <!-- Card 8-->
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="card">
-          <img src="ms.jpg" class="card-img-top" alt="">
-          <div class="card-body">
-            <p> M-Sonic </p>
-            <a href="an/snesha.html" class="btn-view">View</a>
-          </div>
-        </div>
-      </div>
-
-
-            <!-- Card 9-->
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="card">
-          <img src="vi.jpg" class="card-img-top" alt="">
-          <div class="card-body">
-            <p> Shaan ( Prayas 2025) </p>
-            <a href="an/snesha.html" class="btn-view">View</a>
-          </div>
-        </div>
-      </div>
-
-    
-
-    </div>
-  </div>
-
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
